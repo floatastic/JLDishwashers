@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 
 class ProductsService {
-    typealias SearchResult = Either<NSError, [SearchResultsProduct]?>
+    typealias SearchResult = Either<NSError?, [SearchResultsProduct]?>
     
     private typealias JSONDict = [String : AnyObject]
     
@@ -12,15 +12,15 @@ class ProductsService {
     
     func fetchList(completion: SearchResult -> Void) {
         Alamofire.request(.GET, searchURLString, parameters: nil).responseJSON { response in
-            if let httpResponse = response.response where 200 ... 299 ~= httpResponse.statusCode {
-                switch response.result {
-                case .Success(let json as JSONDict):
-                    let productsDict = json[self.productsKey] as? [JSONDict]
-                    let result: SearchResult = Either.Right(self.productsFromResponse(productsDict))
-                    completion(result)
-                default:
-                    completion(Either.Right(nil) as SearchResult)
-                }
+            switch response.result {
+            case .Success(let json as JSONDict):
+                let productsDict = json[self.productsKey] as? [JSONDict]
+                let result: SearchResult = Either.Right(self.productsFromResponse(productsDict))
+                completion(result)
+            case .Failure(let error):
+                completion(Either.Left(error))
+            default:
+                completion(Either.Right(nil) as SearchResult)
             }
         }
     }

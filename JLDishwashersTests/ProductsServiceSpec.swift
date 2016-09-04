@@ -7,7 +7,10 @@ class ProductsServiceSpec: QuickSpec {
     override func spec() {
         describe("product service") {
             var service: ProductsService!
+            
             var products: [SearchResultsProduct]?
+            var error: NSError?
+            
             beforeEach {
                 service = ProductsService()
             }
@@ -57,11 +60,36 @@ class ProductsServiceSpec: QuickSpec {
                 }
                 
             }
+            
+            context("receiving unsuccessful response with 400 status code") {
+                beforeEach {
+                    self.stubSearchRequestWith400Response()
+                    
+                    service.fetchList {
+                        switch $0 {
+                        case .Right(let responseProducts):
+                            products = responseProducts
+                        case .Left(let responseError):
+                            error = responseError
+                        }
+                    }
+                }
+                
+                it("should pass the error in .Left case") {
+                    expect(error).toNotEventually(beNil())
+                }
+                
+            }
         }
     }
 }
 
 private extension ProductsServiceSpec {
+    func stubSearchRequestWith400Response() {
+        let response = OHHTTPStubsResponse(error: NSError(domain: "", code: 1, userInfo: nil))
+        stubProductSearchRequest(withResponse: response)
+    }
+    
     func stubSearchRequestWithEmptyResponse() {
         let response = OHHTTPStubsResponse(JSONObject: [String : AnyObject](), statusCode: 200, headers: nil)
         stubProductSearchRequest(withResponse: response)

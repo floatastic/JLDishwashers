@@ -15,7 +15,14 @@ class ProductsServiceSpec: QuickSpec {
             context("receiving successful response with products") {
                 beforeEach {
                     self.stubSearchRequestWithSuccessfulResponse()
-                    service.fetchList { products = $0 }
+                    service.fetchList {
+                        switch $0 {
+                        case .Right(let responseProducts):
+                            products = responseProducts
+                        default:
+                            break
+                        }
+                    }
                 }
                 
                 it("should return number of products with mapped values") {
@@ -35,7 +42,14 @@ class ProductsServiceSpec: QuickSpec {
                     self.stubSearchRequestWithEmptyResponse()
                     products = [SearchResultsProduct]()
                         
-                    service.fetchList { products = $0 }
+                    service.fetchList {
+                        switch $0 {
+                        case .Right(let responseProducts):
+                            products = responseProducts
+                        default:
+                            break
+                        }
+                    }
                 }
                 
                 it("should return nil") {

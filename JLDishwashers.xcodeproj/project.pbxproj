@@ -35,6 +35,7 @@
 		34C589C11D7C756B00CE0E38 /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = 34C589C01D7C756B00CE0E38 /* Cartfile.private */; };
 		34C589C71D7C795100CE0E38 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C589C51D7C795100CE0E38 /* Nimble.framework */; };
 		34C589C81D7C795100CE0E38 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C589C61D7C795100CE0E38 /* Quick.framework */; };
+		34D64EE91D7CD8160011C667 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D64EE81D7CD8160011C667 /* Either.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		34C589C01D7C756B00CE0E38 /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		34C589C51D7C795100CE0E38 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		34C589C61D7C795100CE0E38 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		34D64EE81D7CD8160011C667 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				34C20C4E1D7C881D009D628D /* SearchResultsProduct.swift */,
 				34C20C5D1D7C9822009D628D /* ProductsService.swift */,
+				34D64EE81D7CD8160011C667 /* Either.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				34C589951D7C73D800CE0E38 /* ViewController.swift in Sources */,
 				34C20C5C1D7C92F0009D628D /* README.md in Sources */,
 				34C589931D7C73D800CE0E38 /* AppDelegate.swift in Sources */,
+				34D64EE91D7CD8160011C667 /* Either.swift in Sources */,
 				34C20C5E1D7C9822009D628D /* ProductsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

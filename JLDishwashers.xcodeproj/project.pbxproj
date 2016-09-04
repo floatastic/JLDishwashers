@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34C20C3F1D7C826B009D628D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C589C51D7C795100CE0E38 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34C20C401D7C826C009D628D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C589C61D7C795100CE0E38 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34C589931D7C73D800CE0E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C589921D7C73D800CE0E38 /* AppDelegate.swift */; };
 		34C589951D7C73D800CE0E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C589941D7C73D800CE0E38 /* ViewController.swift */; };
 		34C589981D7C73D800CE0E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C589961D7C73D800CE0E38 /* Main.storyboard */; };
@@ -14,6 +16,9 @@
 		34C5899D1D7C73D800CE0E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C5899B1D7C73D800CE0E38 /* LaunchScreen.storyboard */; };
 		34C589A81D7C73D800CE0E38 /* JLDishwashersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C589A71D7C73D800CE0E38 /* JLDishwashersTests.swift */; };
 		34C589B31D7C73D800CE0E38 /* JLDishwashersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C589B21D7C73D800CE0E38 /* JLDishwashersUITests.swift */; };
+		34C589C11D7C756B00CE0E38 /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = 34C589C01D7C756B00CE0E38 /* Cartfile.private */; };
+		34C589C71D7C795100CE0E38 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C589C51D7C795100CE0E38 /* Nimble.framework */; };
+		34C589C81D7C795100CE0E38 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C589C61D7C795100CE0E38 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		34C20C3E1D7C8262009D628D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34C20C3F1D7C826B009D628D /* Nimble.framework in CopyFiles */,
+				34C20C401D7C826C009D628D /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		34C5898F1D7C73D800CE0E38 /* JLDishwashers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLDishwashers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C589921D7C73D800CE0E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +66,9 @@
 		34C589AE1D7C73D800CE0E38 /* JLDishwashersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLDishwashersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C589B21D7C73D800CE0E38 /* JLDishwashersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLDishwashersUITests.swift; sourceTree = "<group>"; };
 		34C589B41D7C73D800CE0E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C589C01D7C756B00CE0E38 /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
+		34C589C51D7C795100CE0E38 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		34C589C61D7C795100CE0E38 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C589C81D7C795100CE0E38 /* Quick.framework in Frameworks */,
+				34C589C71D7C795100CE0E38 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +101,8 @@
 		34C589861D7C73D800CE0E38 = {
 			isa = PBXGroup;
 			children = (
+				34C589C41D7C790500CE0E38 /* External */,
+				34C589C01D7C756B00CE0E38 /* Cartfile.private */,
 				34C589911D7C73D800CE0E38 /* JLDishwashers */,
 				34C589A61D7C73D800CE0E38 /* JLDishwashersTests */,
 				34C589B11D7C73D800CE0E38 /* JLDishwashersUITests */,
@@ -125,6 +151,15 @@
 			path = JLDishwashersUITests;
 			sourceTree = "<group>";
 		};
+		34C589C41D7C790500CE0E38 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				34C589C51D7C795100CE0E38 /* Nimble.framework */,
+				34C589C61D7C795100CE0E38 /* Quick.framework */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +187,7 @@
 				34C5899F1D7C73D800CE0E38 /* Sources */,
 				34C589A01D7C73D800CE0E38 /* Frameworks */,
 				34C589A11D7C73D800CE0E38 /* Resources */,
+				34C20C3E1D7C8262009D628D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -231,6 +267,7 @@
 			files = (
 				34C5899D1D7C73D800CE0E38 /* LaunchScreen.storyboard in Resources */,
 				34C5899A1D7C73D800CE0E38 /* Assets.xcassets in Resources */,
+				34C589C11D7C756B00CE0E38 /* Cartfile.private in Resources */,
 				34C589981D7C73D800CE0E38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JLDishwashers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = software.erigo.apps.JLDishwashers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JLDishwashers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = software.erigo.apps.JLDishwashers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +462,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JLDishwashersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = software.erigo.apps.JLDishwashersTests;
@@ -435,6 +478,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JLDishwashersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = software.erigo.apps.JLDishwashersTests;
@@ -484,6 +531,7 @@
 				34C589B91D7C73D800CE0E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34C589BA1D7C73D800CE0E38 /* Build configuration list for PBXNativeTarget "JLDishwashersTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +540,7 @@
 				34C589BC1D7C73D800CE0E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34C589BD1D7C73D800CE0E38 /* Build configuration list for PBXNativeTarget "JLDishwashersUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +549,7 @@
 				34C589BF1D7C73D800CE0E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

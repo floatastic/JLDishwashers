@@ -13,7 +13,8 @@ class ProductsService {
             if let httpResponse = response.response where 200 ... 299 ~= httpResponse.statusCode {
                 switch response.result {
                 case .Success(let json as JSONDict):
-                    completion(self.productsFromResponse(json[self.productsKey] as? [JSONDict]))
+                    let productsDict = json[self.productsKey] as? [JSONDict]
+                    completion(self.productsFromResponse(productsDict))
                 default:
                     completion(nil)
                 }

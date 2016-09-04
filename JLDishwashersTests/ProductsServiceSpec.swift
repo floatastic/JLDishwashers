@@ -14,7 +14,7 @@ class ProductsServiceSpec: QuickSpec {
             
             context("receiving successful response with products") {
                 beforeEach {
-                    self.stubSuccessfulProductSearchRequest()
+                    self.stubSearchRequestWithSuccessfulResponse()
                     service.fetchList { products = $0 }
                 }
                 
@@ -29,15 +29,41 @@ class ProductsServiceSpec: QuickSpec {
                 }
                 
             }
+            
+            context("receiving successful response without products") {
+                beforeEach {
+                    self.stubSearchRequestWithEmptyResponse()
+                    products = [SearchResultsProduct]()
+                        
+                    service.fetchList { products = $0 }
+                }
+                
+                it("should return nil") {
+                    expect(products).toEventually(beNil())
+                }
+                
+            }
         }
     }
+}
+
+private extension ProductsServiceSpec {
+    func stubSearchRequestWithEmptyResponse() {
+        let response = OHHTTPStubsResponse(JSONObject: [String : AnyObject](), statusCode: 200, headers: nil)
+        stubProductSearchRequest(withResponse: response)
+    }
     
-    private func stubSuccessfulProductSearchRequest() {
+    func stubSearchRequestWithSuccessfulResponse() {
+        let filePath = NSBundle(forClass: self.dynamicType).pathForResource("ProductsSearchResponse", ofType: "json")!
+        let response = OHHTTPStubsResponse(fileAtPath: filePath, statusCode: 200, headers: nil)
+        stubProductSearchRequest(withResponse: response)
+    }
+    
+    func stubProductSearchRequest(withResponse response: OHHTTPStubsResponse) {
         OHHTTPStubs.stubRequestsPassingTest({
             return $0.URLString == "https://api.johnlewis.com/v1/products/search?q=dishwasher&key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb&pageSize=20"
             }, withStubResponse: {_ in
-                let filePath = NSBundle(forClass: self.dynamicType).pathForResource("ProductsSearchResponse", ofType: "json")!
-                return OHHTTPStubsResponse(fileAtPath: filePath, statusCode: 200, headers: nil)
+                return response
         })
     }
 }

@@ -43,15 +43,22 @@
                                     <rect key="frame" x="0.0" y="0.0" width="256" height="352"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJs-sP-BVL">
-                                            <rect key="frame" x="107" y="60" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2g-Y9-drY">
+                                            <rect key="frame" x="18" y="273" width="220" height="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2g-Y9-drY">
-                                            <rect key="frame" x="107" y="221" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r3J-oN-bUw">
+                                            <rect key="frame" x="18" y="18" width="220" height="220"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="220" id="HEV-OV-WqT"/>
+                                                <constraint firstAttribute="height" constant="220" id="Vf9-Yv-E80"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJs-sP-BVL">
+                                            <rect key="frame" x="18" y="246" width="220" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -59,10 +66,17 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="r3J-oN-bUw" firstAttribute="leading" secondItem="tgT-AW-8uT" secondAttribute="leadingMargin" constant="10" id="1y3-Ir-PuK"/>
+                                    <constraint firstItem="B2g-Y9-drY" firstAttribute="width" secondItem="kJs-sP-BVL" secondAttribute="width" id="5qS-sB-Ldx"/>
+                                    <constraint firstItem="r3J-oN-bUw" firstAttribute="top" secondItem="tgT-AW-8uT" secondAttribute="topMargin" constant="10" id="EqM-Qs-Cy1"/>
                                     <constraint firstItem="kJs-sP-BVL" firstAttribute="centerX" secondItem="tgT-AW-8uT" secondAttribute="centerX" id="GLw-hU-Qeu"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="B2g-Y9-drY" secondAttribute="bottom" constant="102" id="LpB-z6-bap"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="kJs-sP-BVL" secondAttribute="trailing" constant="10" id="LWt-Eo-s7M"/>
+                                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="B2g-Y9-drY" secondAttribute="bottom" constant="10" id="LpB-z6-bap"/>
                                     <constraint firstItem="B2g-Y9-drY" firstAttribute="centerX" secondItem="tgT-AW-8uT" secondAttribute="centerX" id="U3c-Zh-PYe"/>
-                                    <constraint firstItem="kJs-sP-BVL" firstAttribute="top" secondItem="tgT-AW-8uT" secondAttribute="topMargin" constant="52" id="cQ5-ih-9DH"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="r3J-oN-bUw" secondAttribute="trailing" constant="10" id="elu-Oc-ey8"/>
+                                    <constraint firstItem="kJs-sP-BVL" firstAttribute="leading" secondItem="tgT-AW-8uT" secondAttribute="leadingMargin" constant="10" id="evF-Rg-TUr"/>
+                                    <constraint firstItem="kJs-sP-BVL" firstAttribute="top" secondItem="r3J-oN-bUw" secondAttribute="bottom" constant="8" id="hSY-OL-lge"/>
+                                    <constraint firstItem="B2g-Y9-drY" firstAttribute="top" secondItem="kJs-sP-BVL" secondAttribute="bottom" constant="9" id="kCU-q4-3aV"/>
                                 </constraints>
                                 <size key="customSize" width="256" height="352"/>
                                 <connections>

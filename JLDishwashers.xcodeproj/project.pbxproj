@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34AA44FC1D7E0780003CF238 /* ProductsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA44FB1D7E0780003CF238 /* ProductsGridViewController.swift */; };
+		34AA44FF1D7E08B9003CF238 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA44FE1D7E08B9003CF238 /* ProductCollectionViewCell.swift */; };
+		34AA45011D7E0E3A003CF238 /* ProductCollectionViewCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA45001D7E0E3A003CF238 /* ProductCollectionViewCellSpec.swift */; };
+		34AA45031D7E1077003CF238 /* ProductsGridDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA45021D7E1077003CF238 /* ProductsGridDataSource.swift */; };
+		34AA45051D7E10CB003CF238 /* ProductsGridDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA45041D7E10CB003CF238 /* ProductsGridDataSourceSpec.swift */; };
+		34AA45071D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA45061D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift */; };
+		34AA450A1D7E201D003CF238 /* ProductsGridHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA45091D7E201D003CF238 /* ProductsGridHelper.swift */; };
 		34C20C3F1D7C826B009D628D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C589C51D7C795100CE0E38 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34C20C401D7C826C009D628D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C589C61D7C795100CE0E38 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34C20C4A1D7C8710009D628D /* SearchResultsProductSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C20C491D7C8710009D628D /* SearchResultsProductSpec.swift */; };
@@ -26,7 +33,6 @@
 		34C20C671D7CCBDC009D628D /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C20C661D7CCBDC009D628D /* OHHTTPStubs.framework */; };
 		34C20C681D7CCBEE009D628D /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C20C661D7CCBDC009D628D /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34C589931D7C73D800CE0E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C589921D7C73D800CE0E38 /* AppDelegate.swift */; };
-		34C589951D7C73D800CE0E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C589941D7C73D800CE0E38 /* ViewController.swift */; };
 		34C589981D7C73D800CE0E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C589961D7C73D800CE0E38 /* Main.storyboard */; };
 		34C5899A1D7C73D800CE0E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C589991D7C73D800CE0E38 /* Assets.xcassets */; };
 		34C5899D1D7C73D800CE0E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C5899B1D7C73D800CE0E38 /* LaunchScreen.storyboard */; };
@@ -83,6 +89,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		34AA44FB1D7E0780003CF238 /* ProductsGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsGridViewController.swift; path = ViewControllers/ProductsGridViewController.swift; sourceTree = "<group>"; };
+		34AA44FE1D7E08B9003CF238 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductCollectionViewCell.swift; path = Views/ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		34AA45001D7E0E3A003CF238 /* ProductCollectionViewCellSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCellSpec.swift; sourceTree = "<group>"; };
+		34AA45021D7E1077003CF238 /* ProductsGridDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsGridDataSource.swift; path = Models/ProductsGridDataSource.swift; sourceTree = "<group>"; };
+		34AA45041D7E10CB003CF238 /* ProductsGridDataSourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsGridDataSourceSpec.swift; path = Specs/ProductsGridDataSourceSpec.swift; sourceTree = "<group>"; };
+		34AA45061D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridViewControllerSpec.swift; sourceTree = "<group>"; };
+		34AA45091D7E201D003CF238 /* ProductsGridHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsGridHelper.swift; path = Helpers/ProductsGridHelper.swift; sourceTree = "<group>"; };
 		34C20C491D7C8710009D628D /* SearchResultsProductSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsProductSpec.swift; path = Specs/SearchResultsProductSpec.swift; sourceTree = "<group>"; };
 		34C20C4B1D7C8759009D628D /* ProductSearchFirst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ProductSearchFirst.json; path = Resources/ProductSearchFirst.json; sourceTree = "<group>"; };
 		34C20C4E1D7C881D009D628D /* SearchResultsProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsProduct.swift; path = Models/SearchResultsProduct.swift; sourceTree = "<group>"; };
@@ -97,7 +110,6 @@
 		34C20C661D7CCBDC009D628D /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		34C5898F1D7C73D800CE0E38 /* JLDishwashers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLDishwashers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C589921D7C73D800CE0E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34C589941D7C73D800CE0E38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34C589971D7C73D800CE0E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34C589991D7C73D800CE0E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34C5899C1D7C73D800CE0E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -145,6 +157,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34AA44FA1D7E0748003CF238 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				34AA44FB1D7E0780003CF238 /* ProductsGridViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		34AA44FD1D7E080F003CF238 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34AA44FE1D7E08B9003CF238 /* ProductCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		34AA45081D7E2001003CF238 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				34AA45091D7E201D003CF238 /* ProductsGridHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		34C20C411D7C851A009D628D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +195,9 @@
 			children = (
 				34C20C491D7C8710009D628D /* SearchResultsProductSpec.swift */,
 				34C20C5F1D7C983A009D628D /* ProductsServiceSpec.swift */,
+				34AA45001D7E0E3A003CF238 /* ProductCollectionViewCellSpec.swift */,
+				34AA45041D7E10CB003CF238 /* ProductsGridDataSourceSpec.swift */,
+				34AA45061D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -169,6 +208,7 @@
 				34C20C4E1D7C881D009D628D /* SearchResultsProduct.swift */,
 				34C20C5D1D7C9822009D628D /* ProductsService.swift */,
 				34D64EE81D7CD8160011C667 /* Either.swift */,
+				34AA45021D7E1077003CF238 /* ProductsGridDataSource.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -200,9 +240,10 @@
 		34C589911D7C73D800CE0E38 /* JLDishwashers */ = {
 			isa = PBXGroup;
 			children = (
+				34AA44FD1D7E080F003CF238 /* Views */,
+				34AA44FA1D7E0748003CF238 /* ViewControllers */,
 				34C20C4D1D7C87F9009D628D /* Models */,
 				34C589921D7C73D800CE0E38 /* AppDelegate.swift */,
-				34C589941D7C73D800CE0E38 /* ViewController.swift */,
 				34C589961D7C73D800CE0E38 /* Main.storyboard */,
 				34C589991D7C73D800CE0E38 /* Assets.xcassets */,
 				34C5899B1D7C73D800CE0E38 /* LaunchScreen.storyboard */,
@@ -214,6 +255,7 @@
 		34C589A61D7C73D800CE0E38 /* JLDishwashersTests */ = {
 			isa = PBXGroup;
 			children = (
+				34AA45081D7E2001003CF238 /* Helpers */,
 				34C20C461D7C86DF009D628D /* Specs */,
 				34C20C411D7C851A009D628D /* Resources */,
 				34C589A71D7C73D800CE0E38 /* JLDishwashersTests.swift */,
@@ -382,8 +424,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				34C20C4F1D7C881D009D628D /* SearchResultsProduct.swift in Sources */,
-				34C589951D7C73D800CE0E38 /* ViewController.swift in Sources */,
+				34AA44FF1D7E08B9003CF238 /* ProductCollectionViewCell.swift in Sources */,
 				34C20C5C1D7C92F0009D628D /* README.md in Sources */,
+				34AA44FC1D7E0780003CF238 /* ProductsGridViewController.swift in Sources */,
+				34AA45031D7E1077003CF238 /* ProductsGridDataSource.swift in Sources */,
 				34C589931D7C73D800CE0E38 /* AppDelegate.swift in Sources */,
 				34D64EE91D7CD8160011C667 /* Either.swift in Sources */,
 				34C20C5E1D7C9822009D628D /* ProductsService.swift in Sources */,
@@ -395,8 +439,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				34C20C4A1D7C8710009D628D /* SearchResultsProductSpec.swift in Sources */,
+				34AA45011D7E0E3A003CF238 /* ProductCollectionViewCellSpec.swift in Sources */,
+				34AA450A1D7E201D003CF238 /* ProductsGridHelper.swift in Sources */,
 				34C20C601D7C983A009D628D /* ProductsServiceSpec.swift in Sources */,
 				34C589A81D7C73D800CE0E38 /* JLDishwashersTests.swift in Sources */,
+				34AA45051D7E10CB003CF238 /* ProductsGridDataSourceSpec.swift in Sources */,
+				34AA45071D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,25 +1,86 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4sG-Xm-Gxe">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="2rh-FX-3Om">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="4sG-Xm-Gxe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uHe-89-gJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8E7-Wj-emY" kind="relationship" relationship="rootViewController" id="pXS-QT-HSx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QeB-NT-4Hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="1069"/>
+        </scene>
+        <!--Products Grid View Controller-->
+        <scene sceneID="zGw-3R-N3S">
+            <objects>
+                <collectionViewController storyboardIdentifier="ProductsGridViewController" id="8E7-Wj-emY" customClass="ProductsGridViewController" customModule="JLDishwashers" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rap-Ed-E02">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="YYv-x3-Yrx">
+                            <size key="itemSize" width="256" height="352"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="tgT-AW-8uT" customClass="ProductCollectionViewCell" customModule="JLDishwashers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="256" height="352"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="256" height="352"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJs-sP-BVL">
+                                            <rect key="frame" x="107" y="60" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2g-Y9-drY">
+                                            <rect key="frame" x="107" y="221" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="kJs-sP-BVL" firstAttribute="centerX" secondItem="tgT-AW-8uT" secondAttribute="centerX" id="GLw-hU-Qeu"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="B2g-Y9-drY" secondAttribute="bottom" constant="102" id="LpB-z6-bap"/>
+                                    <constraint firstItem="B2g-Y9-drY" firstAttribute="centerX" secondItem="tgT-AW-8uT" secondAttribute="centerX" id="U3c-Zh-PYe"/>
+                                    <constraint firstItem="kJs-sP-BVL" firstAttribute="top" secondItem="tgT-AW-8uT" secondAttribute="topMargin" constant="52" id="cQ5-ih-9DH"/>
+                                </constraints>
+                                <size key="customSize" width="256" height="352"/>
+                                <connections>
+                                    <outlet property="priceLabel" destination="B2g-Y9-drY" id="4L6-Ei-V9H"/>
+                                    <outlet property="titleLabel" destination="kJs-sP-BVL" id="KST-tE-cPf"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="8E7-Wj-emY" id="dzG-JG-g3Y"/>
+                            <outlet property="delegate" destination="8E7-Wj-emY" id="uva-6L-PaG"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="5aq-ji-SBl"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hr-aZ-RuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1142" y="1069"/>
         </scene>
     </scenes>
 </document>

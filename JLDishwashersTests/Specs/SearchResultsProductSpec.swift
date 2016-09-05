@@ -18,6 +18,10 @@ class SearchResultsProductSpec: QuickSpec {
                     expect(product.title) == "Bosch SMS50C22GB Freestanding Dishwasher, White"
                     expect(product.imageURLString) == "//johnlewis.scene7.com/is/image/JohnLewis/236477525?"
                 }
+                
+                it("should give secure image URL string") {
+                    expect(product.secureImageURLString()) == "https://johnlewis.scene7.com/is/image/JohnLewis/236477525?"
+                }
             }
         }
     }

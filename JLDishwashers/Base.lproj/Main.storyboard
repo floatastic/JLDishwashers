@@ -80,6 +80,7 @@
                                 </constraints>
                                 <size key="customSize" width="256" height="352"/>
                                 <connections>
+                                    <outlet property="imageView" destination="r3J-oN-bUw" id="ntt-Au-r5Q"/>
                                     <outlet property="priceLabel" destination="B2g-Y9-drY" id="4L6-Ei-V9H"/>
                                     <outlet property="titleLabel" destination="kJs-sP-BVL" id="KST-tE-cPf"/>
                                 </connections>

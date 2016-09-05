@@ -2,11 +2,11 @@ import UIKit
 @testable import JLDishwashers
 
 class ProductsGridHelper {
-    class func defaultCell() -> ProductCollectionViewCell {
+    class func defaultCell() -> ProductCollectionViewCellStub {
         let titleLabel = UILabel()
         let priceLabel = UILabel()
         
-        let cell = ProductCollectionViewCell()
+        let cell = ProductCollectionViewCellStub()
         cell.priceLabel = titleLabel
         cell.titleLabel = priceLabel
         cell.contentView.addSubview(titleLabel)
@@ -22,5 +22,11 @@ class ProductsGridHelper {
 class UICollectionViewStub: UICollectionView {
     override func dequeueReusableCellWithReuseIdentifier(identifier: String, forIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         return ProductsGridHelper.defaultCell()
+    }
+}
+
+class ProductCollectionViewCellStub: ProductCollectionViewCell {
+    override func loadImageFromURLString(urlString: String?) {
+        
     }
 }

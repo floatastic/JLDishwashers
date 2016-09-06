@@ -20,4 +20,13 @@ class ProductsGridViewController: UICollectionViewController {
         let count = dataSource.products?.count ?? 0
         title = String(format: "%@ (%u)", NSLocalizedString("Dishwashers", comment: ""), count)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let cell = sender as? UICollectionViewCell, indexPath = collectionView?.indexPathForCell(cell),
+            product = dataSource.productForIndexPath(indexPath),
+            detailsController = segue.destinationViewController as? ProductDetailsViewController {
+            
+            detailsController.presentProduct(product)
+        }
+    }
 }

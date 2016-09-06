@@ -23,6 +23,8 @@
 		34AA45171D7F5900003CF238 /* StaticDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA45161D7F5900003CF238 /* StaticDecodable.swift */; };
 		34AA45191D7F5DAC003CF238 /* SearchResultsProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA45181D7F5DAC003CF238 /* SearchResultsProduct.swift */; };
 		34AA451B1D7F6884003CF238 /* ProductsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA451A1D7F6884003CF238 /* ProductsHelper.swift */; };
+		34AA451D1D7F7363003CF238 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA451C1D7F7363003CF238 /* ProductDetailsViewController.swift */; };
+		34AA451F1D7F737E003CF238 /* ProductDetailsViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA451E1D7F737E003CF238 /* ProductDetailsViewControllerSpec.swift */; };
 		34C20C3F1D7C826B009D628D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C589C51D7C795100CE0E38 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34C20C401D7C826C009D628D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C589C61D7C795100CE0E38 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34C20C4A1D7C8710009D628D /* SearchResultsProductSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C20C491D7C8710009D628D /* SearchResultsProductSpec.swift */; };
@@ -113,6 +115,8 @@
 		34AA45161D7F5900003CF238 /* StaticDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaticDecodable.swift; path = Models/StaticDecodable.swift; sourceTree = "<group>"; };
 		34AA45181D7F5DAC003CF238 /* SearchResultsProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsProduct.swift; path = Models/SearchResultsProduct.swift; sourceTree = "<group>"; };
 		34AA451A1D7F6884003CF238 /* ProductsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsHelper.swift; path = Helpers/ProductsHelper.swift; sourceTree = "<group>"; };
+		34AA451C1D7F7363003CF238 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDetailsViewController.swift; path = ViewControllers/ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		34AA451E1D7F737E003CF238 /* ProductDetailsViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductDetailsViewControllerSpec.swift; path = Specs/ProductDetailsViewControllerSpec.swift; sourceTree = "<group>"; };
 		34C20C491D7C8710009D628D /* SearchResultsProductSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsProductSpec.swift; path = Specs/SearchResultsProductSpec.swift; sourceTree = "<group>"; };
 		34C20C4B1D7C8759009D628D /* ProductSearchFirst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ProductSearchFirst.json; path = Resources/ProductSearchFirst.json; sourceTree = "<group>"; };
 		34C20C4E1D7C881D009D628D /* ProductsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsService.swift; path = Models/ProductsService.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				34AA44FB1D7E0780003CF238 /* ProductsGridViewController.swift */,
+				34AA451C1D7F7363003CF238 /* ProductDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				34AA45001D7E0E3A003CF238 /* ProductCollectionViewCellSpec.swift */,
 				34AA45041D7E10CB003CF238 /* ProductsGridDataSourceSpec.swift */,
 				34AA45061D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift */,
+				34AA451E1D7F737E003CF238 /* ProductDetailsViewControllerSpec.swift */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 				34C20C4F1D7C881D009D628D /* ProductsService.swift in Sources */,
 				34AA45191D7F5DAC003CF238 /* SearchResultsProduct.swift in Sources */,
 				34AA44FF1D7E08B9003CF238 /* ProductCollectionViewCell.swift in Sources */,
+				34AA451D1D7F7363003CF238 /* ProductDetailsViewController.swift in Sources */,
 				34C20C5C1D7C92F0009D628D /* README.md in Sources */,
 				34AA44FC1D7E0780003CF238 /* ProductsGridViewController.swift in Sources */,
 				34AA45031D7E1077003CF238 /* ProductsGridDataSource.swift in Sources */,
@@ -474,6 +481,7 @@
 				34C589A81D7C73D800CE0E38 /* JLDishwashersTests.swift in Sources */,
 				34AA451B1D7F6884003CF238 /* ProductsHelper.swift in Sources */,
 				34AA45051D7E10CB003CF238 /* ProductsGridDataSourceSpec.swift in Sources */,
+				34AA451F1D7F737E003CF238 /* ProductDetailsViewControllerSpec.swift in Sources */,
 				34AA45071D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

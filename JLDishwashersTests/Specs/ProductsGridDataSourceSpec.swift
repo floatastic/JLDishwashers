@@ -48,6 +48,12 @@ class ProductsGridDataSourceSpec: QuickSpec {
                     expect(cell.titleLabel.text) == "A product"
                     expect(cell.priceLabel.text) == "£123.00"
                 }
+                
+                it("should return correct product for index path") {
+                    let indexPath = NSIndexPath(forItem: 0, inSection: 0)
+                    let product = dataSource.productForIndexPath(indexPath)
+                    expect(product?.productId) == "234"
+                }
             }
         }
     }

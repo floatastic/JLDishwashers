@@ -29,6 +29,10 @@ class ProductsGridDataSource: NSObject, UICollectionViewDataSource {
         }
     }
     
+    func productForIndexPath(indexPath: NSIndexPath) -> SearchResultsProduct? {
+        return products?[indexPath.row]
+    }
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return products?.count ?? 0
     }

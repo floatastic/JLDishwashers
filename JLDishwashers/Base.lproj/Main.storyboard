@@ -83,6 +83,7 @@
                                     <outlet property="imageView" destination="r3J-oN-bUw" id="ntt-Au-r5Q"/>
                                     <outlet property="priceLabel" destination="B2g-Y9-drY" id="4L6-Ei-V9H"/>
                                     <outlet property="titleLabel" destination="kJs-sP-BVL" id="KST-tE-cPf"/>
+                                    <segue destination="orB-UK-g18" kind="show" id="2TM-Ni-5uN"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -96,6 +97,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hr-aZ-RuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1142" y="1069"/>
+        </scene>
+        <!--Product Details View Controller-->
+        <scene sceneID="iR1-o2-SUA">
+            <objects>
+                <viewController id="orB-UK-g18" customClass="ProductDetailsViewController" customModule="JLDishwashers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KGM-yg-gc2"/>
+                        <viewControllerLayoutGuide type="bottom" id="HAR-8d-JZz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aH6-Sb-cY9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJe-Mw-R5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="1069"/>
         </scene>
     </scenes>
 </document>

@@ -15,6 +15,8 @@
 		34AA45071D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA45061D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift */; };
 		34AA450A1D7E201D003CF238 /* ProductsGridHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA45091D7E201D003CF238 /* ProductsGridHelper.swift */; };
 		34AA450C1D7E2B7E003CF238 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA450B1D7E2B7E003CF238 /* Style.swift */; };
+		34AA450E1D7F4EA1003CF238 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AA450D1D7F4EA1003CF238 /* WebImage.framework */; };
+		34AA450F1D7F4EAD003CF238 /* WebImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34AA450D1D7F4EA1003CF238 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34C20C3F1D7C826B009D628D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C589C51D7C795100CE0E38 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34C20C401D7C826C009D628D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C589C61D7C795100CE0E38 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		34C20C4A1D7C8710009D628D /* SearchResultsProductSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C20C491D7C8710009D628D /* SearchResultsProductSpec.swift */; };
@@ -81,6 +83,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				34AA450F1D7F4EAD003CF238 /* WebImage.framework in CopyFiles */,
 				34C20C651D7CC6EB009D628D /* Alamofire.framework in CopyFiles */,
 				34C20C591D7C8D75009D628D /* Argo.framework in CopyFiles */,
 				34C20C5A1D7C8D75009D628D /* Curry.framework in CopyFiles */,
@@ -98,6 +101,7 @@
 		34AA45061D7E1AA7003CF238 /* ProductsGridViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsGridViewControllerSpec.swift; sourceTree = "<group>"; };
 		34AA45091D7E201D003CF238 /* ProductsGridHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductsGridHelper.swift; path = Helpers/ProductsGridHelper.swift; sourceTree = "<group>"; };
 		34AA450B1D7E2B7E003CF238 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Style.swift; path = Models/Style.swift; sourceTree = "<group>"; };
+		34AA450D1D7F4EA1003CF238 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
 		34C20C491D7C8710009D628D /* SearchResultsProductSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsProductSpec.swift; path = Specs/SearchResultsProductSpec.swift; sourceTree = "<group>"; };
 		34C20C4B1D7C8759009D628D /* ProductSearchFirst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ProductSearchFirst.json; path = Resources/ProductSearchFirst.json; sourceTree = "<group>"; };
 		34C20C4E1D7C881D009D628D /* SearchResultsProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsProduct.swift; path = Models/SearchResultsProduct.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				34C20C571D7C8D51009D628D /* Curry.framework in Frameworks */,
 				34C20C641D7CC6E0009D628D /* Alamofire.framework in Frameworks */,
 				34C20C561D7C8D51009D628D /* Argo.framework in Frameworks */,
+				34AA450E1D7F4EA1003CF238 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +284,7 @@
 		34C589C41D7C790500CE0E38 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				34AA450D1D7F4EA1003CF238 /* WebImage.framework */,
 				34C20C661D7CCBDC009D628D /* OHHTTPStubs.framework */,
 				34C20C631D7CC6E0009D628D /* Alamofire.framework */,
 				34C20C541D7C8D51009D628D /* Argo.framework */,

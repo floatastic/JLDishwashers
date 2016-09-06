@@ -19,6 +19,10 @@ struct SearchResultsProduct {
     func secureImageURLString() -> String? {
         return imageURLString.map { "https:\($0)" }
     }
+    
+    func formattedPrice() -> String? {
+        return price.map { return "£\($0)"}
+    }
 }
 
 extension SearchResultsProduct: Decodable {

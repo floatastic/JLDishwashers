@@ -27,7 +27,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     func updateValuesForProduct(product: SearchResultsProduct) {
         titleLabel.text = product.title
-        priceLabel.text = product.price
+        priceLabel.text = product.formattedPrice()
         loadImageFromURLString(product.secureImageURLString())
     }
     

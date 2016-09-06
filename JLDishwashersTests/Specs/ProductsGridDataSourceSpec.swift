@@ -46,7 +46,7 @@ class ProductsGridDataSourceSpec: QuickSpec {
                     let indexPath = NSIndexPath(forItem: 0, inSection: 0)
                     let cell = dataSource.collectionView(ProductsGridHelper.collectionView(), cellForItemAtIndexPath: indexPath) as! ProductCollectionViewCell
                     expect(cell.titleLabel.text) == "Dishwasher XYZ"
-                    expect(cell.priceLabel.text) == "555.12"
+                    expect(cell.priceLabel.text) == "£555.12"
                 }
             }
         }

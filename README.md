@@ -14,6 +14,7 @@
 ## Assumptions
 * All properties of structs being mapped from API are optional and if some value is missing the struct is still valid and will be displayed to a user.
 * If search results response status code is 2xx but content is not a JSON array of products it's a case of empty search results, not an error. 
+* If all prices are in GBP I just interpolate strings and don't mind creating number formatter.
 
 ## MVP functionality left
 * Loading and error view in the grid controller

@@ -22,6 +22,10 @@ class SearchResultsProductSpec: QuickSpec {
                 it("should give secure image URL string") {
                     expect(product.secureImageURLString()) == "https://johnlewis.scene7.com/is/image/JohnLewis/236477525?"
                 }
+                
+                it("should have formatted price with currency") {
+                    expect(product.formattedPrice()) == "£329.00"
+                }
             }
         }
     }

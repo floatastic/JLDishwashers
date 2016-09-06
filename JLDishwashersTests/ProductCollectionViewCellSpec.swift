@@ -17,7 +17,7 @@ class ProductCollectionViewCellSpec: QuickSpec {
                 
                 it("should set expected values from a product model") {
                     expect(cell.titleLabel.text) == "A product"
-                    expect(cell.priceLabel.text) == "123.00"
+                    expect(cell.priceLabel.text) == "£123.00"
                 }
             }
         }

@@ -3,6 +3,7 @@ import Curry
 
 struct SearchResultsProduct {
     
+    let productId: String?
     let price: String?
     let title: String?
     let imageURLString: String?
@@ -21,7 +22,8 @@ extension SearchResultsProduct: Decodable, StaticDecodable {
     
     static func decode(j: JSON) -> Decoded<SearchResultsProduct> {
         return curry(SearchResultsProduct.init)
-            <^> j <|? ["price", "now"]
+            <^> j <|? ["productId"]
+            <*> j <|? ["price", "now"]
             <*> j <|? ["title"]
             <*> j <|? ["image"]
     }

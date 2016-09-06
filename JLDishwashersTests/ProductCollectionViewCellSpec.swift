@@ -24,6 +24,6 @@ class ProductCollectionViewCellSpec: QuickSpec {
     }
     
     private func testProduct() -> SearchResultsProduct {
-        return SearchResultsProduct(price: "123.00", title: "A product", imageURLString: nil)
+        return SearchResultsProduct(productId: "234", price: "123.00", title: "A product", imageURLString: nil)
     }
 }

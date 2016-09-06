@@ -53,7 +53,7 @@ class ProductsGridDataSourceSpec: QuickSpec {
     }
     
     private func product() -> SearchResultsProduct {
-        return SearchResultsProduct(price: "555.12", title: "Dishwasher XYZ", imageURLString: nil)
+        return SearchResultsProduct(productId: "234", price: "555.12", title: "Dishwasher XYZ", imageURLString: nil)
     }
 }
 

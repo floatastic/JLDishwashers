@@ -1,4 +1,5 @@
 import UIKit
+import WebImage
 
 class ProductCollectionViewCell: UICollectionViewCell {
     
@@ -44,14 +45,6 @@ class ProductCollectionViewCell: UICollectionViewCell {
             return
         }
         
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), {
-            if let data = NSData(contentsOfURL: url),
-                image = UIImage(data: data) {
-
-                dispatch_async(dispatch_get_main_queue(), {
-                    self.imageView.image = image
-                })
-            }
-        })
+        imageView.sd_setImageWithURL(url)        
     }
 }

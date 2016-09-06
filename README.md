@@ -20,3 +20,4 @@
 ## MVP functionality left
 * Loading and error view in the grid controller
 * Default image placeholder in the grid view
+* Errors deserve more attention. I don't create specific error objects to pass reasons for failure in service

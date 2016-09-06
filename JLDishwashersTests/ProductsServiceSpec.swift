@@ -80,11 +80,45 @@ class ProductsServiceSpec: QuickSpec {
                 }
                 
             }
+            
+            context("receiving successful response with product details") {
+                var product: Product?
+                
+                beforeEach {
+                    self.stubDetailsRequestWithSuccessfulResponse()
+                    service.fetchProductDetails(ProductsHelper.searchProduct()) {
+                        switch $0 {
+                        case .Right(let responseProduct):
+                            product = responseProduct
+                        default:
+                            break
+                        }
+                    }
+                }
+                
+                it("should return product with mapped values") {
+                    expect(product).toEventuallyNot(beNil())
+                    expect(product?.title) == "Bosch SMS50C22GB Freestanding Dishwasher, White"
+                    expect(product?.imageURLStrings).to(haveCount(5))
+                    expect(product?.price) == "329.00"
+                    expect(product?.details) == "<p>Save on your energy bills with the A++...</p>"
+                    expect(product?.displaySpecialOffer) == ""
+                    expect(product?.includedServices) == ["2 year guarantee included"]
+                    expect(product?.code) == "81701222"
+                }
+                
+            }
         }
     }
 }
 
 private extension ProductsServiceSpec {
+    func stubDetailsRequestWithSuccessfulResponse() {
+        let filePath = NSBundle(forClass: self.dynamicType).pathForResource("ProductResponse", ofType: "json")!
+        let response = OHHTTPStubsResponse(fileAtPath: filePath, statusCode: 200, headers: nil)
+        stubProductDetailsRequest(withResponse: response)
+    }
+    
     func stubSearchRequestWith400Response() {
         let response = OHHTTPStubsResponse(error: NSError(domain: "", code: 1, userInfo: nil))
         stubProductSearchRequest(withResponse: response)
@@ -101,9 +135,17 @@ private extension ProductsServiceSpec {
         stubProductSearchRequest(withResponse: response)
     }
     
+    func stubProductDetailsRequest(withResponse response: OHHTTPStubsResponse) {
+        stubRequestWithURLString("https://api.johnlewis.com/v1/products/234?key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb", withResponse: response)
+    }
+    
     func stubProductSearchRequest(withResponse response: OHHTTPStubsResponse) {
+        stubRequestWithURLString("https://api.johnlewis.com/v1/products/search?q=dishwasher&key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb&pageSize=20", withResponse: response)
+    }
+    
+    private func stubRequestWithURLString(urlString: String, withResponse response: OHHTTPStubsResponse) {
         OHHTTPStubs.stubRequestsPassingTest({
-            return $0.URLString == "https://api.johnlewis.com/v1/products/search?q=dishwasher&key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb&pageSize=20"
+            return $0.URLString == urlString
             }, withStubResponse: {_ in
                 return response
         })

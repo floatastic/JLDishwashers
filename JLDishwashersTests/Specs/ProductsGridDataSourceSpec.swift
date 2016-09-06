@@ -18,7 +18,7 @@ class ProductsGridDataSourceSpec: QuickSpec {
             
             context("after loading empty data") {
                 beforeEach {
-                    dataSource.products = [self.product()]
+                    dataSource.products = [ProductsHelper.searchProduct()]
                     dataSource.loadData({ _ in })
                 }
                 
@@ -30,7 +30,7 @@ class ProductsGridDataSourceSpec: QuickSpec {
             
             context("after loading products") {
                 beforeEach {
-                    serviceStub.completionArgument = .Right([self.product()])
+                    serviceStub.completionArgument = .Right([ProductsHelper.searchProduct()])
                     dataSource.loadData({ _ in })
                 }
                 
@@ -45,16 +45,14 @@ class ProductsGridDataSourceSpec: QuickSpec {
                 it("should setup cell accordingly") {
                     let indexPath = NSIndexPath(forItem: 0, inSection: 0)
                     let cell = dataSource.collectionView(ProductsGridHelper.collectionView(), cellForItemAtIndexPath: indexPath) as! ProductCollectionViewCell
-                    expect(cell.titleLabel.text) == "Dishwasher XYZ"
-                    expect(cell.priceLabel.text) == "£555.12"
+                    expect(cell.titleLabel.text) == "A product"
+                    expect(cell.priceLabel.text) == "£123.00"
                 }
             }
         }
     }
     
-    private func product() -> SearchResultsProduct {
-        return SearchResultsProduct(productId: "234", price: "555.12", title: "Dishwasher XYZ", imageURLString: nil)
-    }
+    
 }
 
 private class ProductsServiceStub: ProductsService {

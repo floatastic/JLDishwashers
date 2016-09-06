@@ -12,7 +12,7 @@ class ProductCollectionViewCellSpec: QuickSpec {
             
             context("with values updated from a product") {
                 beforeEach {
-                    cell.updateValuesForProduct(self.testProduct())
+                    cell.updateValuesForProduct(ProductsHelper.searchProduct())
                 }
                 
                 it("should set expected values from a product model") {
@@ -21,9 +21,5 @@ class ProductCollectionViewCellSpec: QuickSpec {
                 }
             }
         }
-    }
-    
-    private func testProduct() -> SearchResultsProduct {
-        return SearchResultsProduct(productId: "234", price: "123.00", title: "A product", imageURLString: nil)
     }
 }

@@ -1,0 +1,450 @@
+{
+    "productId": "3001633",
+    "title": "Bosch SMS50C22GB Freestanding Dishwasher, White",
+    "defaultSku": "236477525",
+    "storeOnly": false,
+    "emailMeWhenAvailable": false,
+    "type": "standard",
+    "ageRestriction": 0,
+    "seoURL": "/bosch-sms50c22gb-freestanding-dishwasher-white/p3001633",
+    "isFBL": false,
+    "price": {
+        "was": "",
+        "then1": "",
+        "then2": "",
+        "now": "329.00",
+        "uom": "",
+        "currency": "GBP"
+    },
+    "code": "81701222",
+    "specialOffers": {
+        "priceMatched": "",
+        "offer": "",
+        "customPromotionalMessage": "",
+        "bundleHeadline": "",
+        "customSpecialOffer": {}
+    },
+    "displaySpecialOffer": "",
+    "setId": "",
+    "templateType": "media-epic-prodtemplate",
+    "skus": [
+             {
+             "id": "236477525",
+             "skuTitle": "Bosch SMS50C22GB Freestanding Dishwasher, White",
+             "shortSkuTitle": "",
+             "color": "",
+             "size": "",
+             "sizeHeadline": "",
+             "swatchUrl": "//johnlewis.scene7.com/is/image/JohnLewis/pswatch_white?cropN=0,0,0.0,0.0&",
+             "availability": {
+             "stockLevel": 66,
+             "availabilityStatus": "INSTOCK",
+             "message": "In stock"
+             },
+             "price": {
+             "was": "",
+             "then1": "",
+             "then2": "",
+             "now": "329.00",
+             "uom": "",
+             "currency": "GBP"
+             },
+             "code": "81701222",
+             "leadTime": "",
+             "d2cDeliveryLeadTime": "",
+             "media": {
+             "images": {
+             "altText": "BuyBosch SMS50C22GB Freestanding Dishwasher, White Online at johnlewis.com",
+             "urls": [
+                      "//johnlewis.scene7.com/is/image/JohnLewis/236477525?",
+                      "//johnlewis.scene7.com/is/image/JohnLewis/236477525alt1?",
+                      "//johnlewis.scene7.com/is/image/JohnLewis/236477525alt10?",
+                      "//johnlewis.scene7.com/is/image/JohnLewis/236477525alt2?",
+                      "//johnlewis.scene7.com/is/image/JohnLewis/236477525alt3?"
+                      ]
+             },
+             "360images": {
+             "swfUrl": "//johnlewis.scene7.com/is/content/JohnLewis/360-degree-view",
+             "urls": []
+             }
+             },
+             "brandName": "Bosch"
+             }
+             ],
+    "priceBands": [],
+    "legs": [],
+    "deliveries": [
+                   {
+                   "deliveryType": "UK",
+                   "options": [
+                               {
+                               "id": "26",
+                               "price": "0.00",
+                               "currency": "GBP",
+                               "shortDescription": "Delivered within 7 working days (may be longer for N Ireland and rural areas)",
+                               "standardDescription": "Delivered within 7 working days (may be longer for N Ireland and rural areas)",
+                               "date": "",
+                               "dateMessage": "",
+                               "trialMessage": ""
+                               },
+                               {
+                               "id": "202",
+                               "price": "19.95",
+                               "currency": "GBP",
+                               "shortDescription": "Express UK Delivery",
+                               "standardDescription": "Next day delivery to selected areas",
+                               "date": "",
+                               "dateMessage": "",
+                               "trialMessage": ""
+                               }
+                               ]
+                   }
+                   ],
+    "deliverySummary": [
+                        {
+                        "deliveryType": "UK",
+                        "title": "UK delivery",
+                        "price": "0.00",
+                        "currency": "GBP",
+                        "summary": "Delivered within 7 working days (may be longer for N Ireland and rural areas)",
+                        "trialMessage": ""
+                        }
+                        ],
+    "additionalServices": {
+        "includedServices": [
+                             "2 year guarantee included"
+                             ],
+        "optionalServices": [
+                             {
+                             "id": "233568687",
+                             "associatedProductId": "1465506",
+                             "title": "5 years Added Care for your home appliance (includes guarantee period)",
+                             "description": "",
+                             "price": "95.00",
+                             "orderOnSite": 1
+                             },
+                             {
+                             "id": "DMS17",
+                             "associatedProductId": "DMS17",
+                             "title": "Dishwasher Connection",
+                             "description": "£25<p>The charge for this service includes:</p>\n<p><ul>\n<li>Connection of the new appliance to a standard domestic water connection point within 1 metre of the installation location</li>\n<li>Connection of the appliance to an existing 3-pin 13amp electrical point within 1 metre of the installation location (we are unable to connect to a 'hardwired' electricity point)</li>\n<li>Connection of the appliance to an existing waste outlet within 1 metre of the installation location</li>\n<li>A test wash to ensure the appliance is filling and draining correctly\n<li>The removal and disposal of all packaging</li></ul>\n</p>\n<strong>Please note:</strong> we are unable to install a freestanding dishwasher where your current appliance is an integrated dishwasher.",
+                             "price": "25.00",
+                             "orderOnSite": 2
+                             },
+                             {
+                             "id": "DMS14",
+                             "associatedProductId": "DMS14",
+                             "title": "Dishwasher Disposal",
+                             "description": "£9<p>The charge for this service includes removal and disposal of your old dishwasher for reuse or recycling.</p>",
+                             "price": "9.00",
+                             "orderOnSite": 3
+                             }
+                             ]
+    },
+    "media": {
+        "images": {
+            "altText": "BuyBosch SMS50C22GB Freestanding Dishwasher, White Online at johnlewis.com",
+            "urls": [
+                     "//johnlewis.scene7.com/is/image/JohnLewis/236477525?",
+                     "//johnlewis.scene7.com/is/image/JohnLewis/236477525alt1?",
+                     "//johnlewis.scene7.com/is/image/JohnLewis/236477525alt10?",
+                     "//johnlewis.scene7.com/is/image/JohnLewis/236477525alt2?",
+                     "//johnlewis.scene7.com/is/image/JohnLewis/236477525alt3?"
+                     ]
+        },
+        "360images": {
+            "swfUrl": "//johnlewis.scene7.com/is/content/JohnLewis/360-degree-view",
+            "urls": []
+        },
+        "videos": {}
+    },
+    "details": {
+        "returns": "<div class=\"parsys par\">\n <div class=\"section cms30r\">\n  <div class=\"free-html\"> \n   <style>#cq-returns-info p a{padding:0;} #cq-returns-info h2{padding:18px 0 16px 0; border-bottom: 1px solid #bfbdb7; font-size: 18px; font-weight: bold;} #cq-returns-info p{padding:0 0 6px;}\n   </style>\n   <div id=\"cq-returns-info\"> \n    <h2>Returns</h2>\n    <p>We want you to be happy with your purchase. If you're not, depending on the type of product, you can make free returns in the UK via John Lewis shops, Royal Mail, Collect+, or MyHermes. If you need to arrange collection of large or heavy items, call us on <b>03456 049 049</b>. For international returns queries, call us on +44 1698 545 454. <a href=\"/customer-services/information-about-ordering-and-returning-products#returns\"> Find out more about returns</a>. </p>\n    <p>You'll find returns information on your delivery note. Unless faulty, we'd like you to make your return within 90 days of purchase. Exceptions apply to certain products - <a href=\"/customer-services/information-about-ordering-and-returning-products#refund\">find out more about our refund policy.</a></p>\n   </div>\n  </div>\n </div>\n</div>",
+        "returnsHeadline": "<div class=\"par parsys\">\n <div class=\"cms30r section\">\n  <div class=\"free-html\"> \n   <style type=\"text/css\">.free-html a.more-details {   font-weight:normal;}}.returns-info { float:left;}.returns-info h2 {float:left;padding-right:10px;}.returns-info-link { padding:4px 0 15px 0;}\n   </style>\n   <div class=\"returns-info\">\n    <h2><a href=\"#tabinfo-returns\" class=\"tab-link\">Returns -</a></h2>\n    <div class=\"returns-info-link\">\n     <a href=\"#tabinfo-returns\" class=\"more-details \">See more details</a>\n    </div>\n   </div>\n  </div>\n </div>\n</div>",
+        "termsAndConditions": "",
+        "productInformation": "<p>Save on your energy bills with the A++...</p>",
+        "features": [
+                     {
+                     "groupName": "",
+                     "attributes": [
+                                    {
+                                    "id": "attr9780069043",
+                                    "name": "Dimensions",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "H84.5cm x W60cm x D60cm"
+                                    },
+                                    {
+                                    "id": "attr9780069044",
+                                    "name": "Quiet Mark",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "No"
+                                    },
+                                    {
+                                    "id": "attr9780069045",
+                                    "name": "Estimated Annual Water Consumption",
+                                    "toolTip": "The amount of water used in litres per year, based on 220 standard washing cycles for cotton programs at 60°C and 40°C at full and partial load. Actual water consumption will depend on how the appliance is used.",
+                                    "uom": "",
+                                    "value": "2660L/year"
+                                    },
+                                    {
+                                    "id": "attr9780069046",
+                                    "name": "Number of Programs",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "4"
+                                    },
+                                    {
+                                    "id": "attr9780069048",
+                                    "name": "Drying System",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "Heat Exchanger"
+                                    },
+                                    {
+                                    "id": "attr9780069049",
+                                    "name": "Model name / number",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "SMS50C22GB"
+                                    },
+                                    {
+                                    "id": "attr9780069050",
+                                    "name": "Quick wash",
+                                    "toolTip": "Speedy programme when you need items cleaned quickly",
+                                    "uom": "",
+                                    "value": "Yes"
+                                    },
+                                    {
+                                    "id": "attr9780069052",
+                                    "name": "Automatic Load Adjustment",
+                                    "toolTip": "Automatically adjusts water level for a smaller load, thus saving time and money",
+                                    "uom": "",
+                                    "value": "Yes"
+                                    },
+                                    {
+                                    "id": "attr9780069053",
+                                    "name": "Drying performance",
+                                    "toolTip": "Graded on performance A - G, with A being the highest grade",
+                                    "uom": "",
+                                    "value": "A"
+                                    },
+                                    {
+                                    "id": "attr9780069054",
+                                    "name": "Overflow protection",
+                                    "toolTip": "An anti-flood device prevents the machine from being damaged by flooding from the inlet pipe",
+                                    "uom": "",
+                                    "value": "YES"
+                                    },
+                                    {
+                                    "id": "attr9780069055",
+                                    "name": "Brand",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "Bosch"
+                                    },
+                                    {
+                                    "id": "attr9780069056",
+                                    "name": "Dishwasher Size",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "Full"
+                                    },
+                                    {
+                                    "id": "attr9780069057",
+                                    "name": "Energy Rating ",
+                                    "toolTip": "Graded on performance, from A+++ to G, with A+++ being the highest rating. Higher ratings mean better energy efficiency",
+                                    "uom": "",
+                                    "value": "A++"
+                                    },
+                                    {
+                                    "id": "attr9780069058",
+                                    "name": "Place Settings",
+                                    "toolTip": "A complete set of items provided for one person at a meal  ",
+                                    "uom": "",
+                                    "value": "12"
+                                    },
+                                    {
+                                    "id": "attr9780069060",
+                                    "name": "Delay Start",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "Yes"
+                                    },
+                                    {
+                                    "id": "attr9780069061",
+                                    "name": "Noise Level",
+                                    "toolTip": "How noisy, in decibels, the machine is. The lower the dB, the quieter the appliance",
+                                    "uom": "",
+                                    "value": "48dB"
+                                    },
+                                    {
+                                    "id": "attr9780069062",
+                                    "name": "Estimated Annual Energy Consumption",
+                                    "toolTip": "Typical annual amount used by a 4 person household",
+                                    "uom": "",
+                                    "value": "258kWh/year"
+                                    },
+                                    {
+                                    "id": "attr9780069063",
+                                    "name": "Cutlery Basket",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "YES"
+                                    },
+                                    {
+                                    "id": "attr9780069064",
+                                    "name": "Child lock",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "YES"
+                                    },
+                                    {
+                                    "id": "attr9780069065",
+                                    "name": "Program Sequence Indicator",
+                                    "toolTip": "Tells you the progress of your washing/drying cycle",
+                                    "uom": "",
+                                    "value": "No"
+                                    },
+                                    {
+                                    "id": "attr9780069067",
+                                    "name": "Next Day Delivery",
+                                    "toolTip": "We offer next working day delivery of appliances in selected areas. See our delivery information page for conditions ",
+                                    "uom": "",
+                                    "value": "YES"
+                                    },
+                                    {
+                                    "id": "attr9780069069",
+                                    "name": "Digital display",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "YES"
+                                    },
+                                    {
+                                    "id": "attr9780069070",
+                                    "name": "Adjustable racking",
+                                    "toolTip": "Lets you move the racking around to fit large or awkward items",
+                                    "uom": "",
+                                    "value": "YES"
+                                    },
+                                    {
+                                    "id": "attr9780069071",
+                                    "name": "Delicate Wash",
+                                    "toolTip": "A gentle clean, designed to protect delicate items, such as glasses",
+                                    "uom": "",
+                                    "value": "Yes"
+                                    },
+                                    {
+                                    "id": "attr9780069072",
+                                    "name": "Energy Consumption Per Standard Cycle",
+                                    "toolTip": "Based on the drying cycle of the standard cotton programme at full load. Actual energy consumption per cycle will depend on how the appliance is used.",
+                                    "uom": "",
+                                    "value": "0.9kWh/cycle"
+                                    },
+                                    {
+                                    "id": "attr9780069073",
+                                    "name": "Water Consumption Per Standard Cycle",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "9.5L"
+                                    },
+                                    {
+                                    "id": "attr9780069074",
+                                    "name": "Time remaining indicator",
+                                    "toolTip": "Tells you how long the programme's got to go",
+                                    "uom": "",
+                                    "value": "Yes"
+                                    },
+                                    {
+                                    "id": "attr9780069075",
+                                    "name": "Cutlery Tray",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "NO"
+                                    },
+                                    {
+                                    "id": "attr9780069077",
+                                    "name": "Rinse Aid Indicator",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "YES"
+                                    },
+                                    {
+                                    "id": "attr9780069078",
+                                    "name": "Wash performance",
+                                    "toolTip": "Graded on performance A - G, with A being the highest grade. The higher the grade the more energy efficient the appliance.",
+                                    "uom": "",
+                                    "value": "A"
+                                    },
+                                    {
+                                    "id": "attr9780069079",
+                                    "name": "Salt Level Indicator",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "YES"
+                                    },
+                                    {
+                                    "id": "attr9780069080",
+                                    "name": "Type",
+                                    "toolTip": "",
+                                    "uom": "",
+                                    "value": "Freestanding"
+                                    }
+                                    ]
+                     }
+                     ],
+        "careGuide": [],
+        "featuredArticles": [],
+        "editorsNotes": "",
+        "buyingGuides": [
+                         {
+                         "title": "Dishwashers Buying Guide",
+                         "image": "//johnlewis.scene7.com/is/image/JohnLewis/electrical_med_icon?",
+                         "linkUrl": "https://www.johnlewis.com/buying-guides/dishwashers-buying-guide",
+                         "linkText": "Dishwashers Buying Guide",
+                         "longDescription": "Wave farewell to the washing up with your new friend in the kitchen"
+                         }
+                         ],
+        "sizeGuides": []
+    },
+    "setElements": [],
+    "bundleProducts": [],
+    "headingTypes": [],
+    "moreFromRange": [],
+    "promotionalFeatures": [],
+    "setInformation": "",
+    "specialOfferBundles": [],
+    "fixedRelatedProducts": [],
+    "siblingSets": [],
+    "defaultCategory": {
+        "id": "6000047",
+        "name": "Dishwashers"
+    },
+    "releaseDateTimestamp": 0,
+    "crumbs": [
+               {
+               "type": "CATALOGUE",
+               "displayName": "Electricals",
+               "item": "500001",
+               "clickable": "true"
+               },
+               {
+               "type": "CATALOGUE",
+               "displayName": "Home Appliances",
+               "item": "1902851",
+               "clickable": "false"
+               },
+               {
+               "type": "CATALOGUE",
+               "displayName": "Dishwashers",
+               "item": "6000047",
+               "clickable": "true"
+               }
+               ],
+    "seoInformation": {
+        "title": "",
+        "description": ""
+    },
+    "reviewData": []
+}

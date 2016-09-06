@@ -7,15 +7,6 @@ struct SearchResultsProduct {
     let title: String?
     let imageURLString: String?
     
-    static func decodeFromJSONObject(jsonObject: AnyObject) -> SearchResultsProduct? {
-        switch SearchResultsProduct.decode(JSON(jsonObject)) {
-        case .Success(let item):
-            return item
-        default:
-            return nil
-        }
-    }
-    
     func secureImageURLString() -> String? {
         return imageURLString.map { "https:\($0)" }
     }
@@ -25,7 +16,9 @@ struct SearchResultsProduct {
     }
 }
 
-extension SearchResultsProduct: Decodable {
+extension SearchResultsProduct: Decodable, StaticDecodable {
+    typealias StaticDecodableType = SearchResultsProduct
+    
     static func decode(j: JSON) -> Decoded<SearchResultsProduct> {
         return curry(SearchResultsProduct.init)
             <^> j <|? ["price", "now"]
